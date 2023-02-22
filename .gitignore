@@ -1,5 +1,44 @@
-﻿################################################################################
-# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
-################################################################################
+# Prerequisites
+*.d
 
-/.vs
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+*.dll
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+/.vs/NPlatform/v16/*.suo
+/NPlatform/bin
+/NPlatform/obj
+/NPlatform.Infrastructure/obj
+/NPlatform.Infrastructure/bin
+/TestPro/bin
+/TestPro/obj
+/TestPro
+bin
+obj
+.vs
