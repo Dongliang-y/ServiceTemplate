@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.9" />
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="MySql.EntityFrameworkCore" Version="6.0.4" />
+    <PackageReference Include="MySqlConnector" Version="2.1.13" />
+  </ItemGroup> 
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Sys\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NPlatform.Domains\NPlatform.Domains.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Using Include="NPlatform" />
+    <Using Include="NPlatform.Infrastructure" />
+    <Using Include="NPlatform.Result" />
+    <Using Include="NPlatform.Query" />
+    <Using Include="NPlatform.Dto" />
+    <Using Include="NPlatform.Events" />
+    <Using Include="NPlatform.Consts" />
+    <Using Include="NPlatform.Exceptions" />
+    <Using Include="NPlatform.Enums" />
+    <Using Include="NPlatform.Bus" />
+    <Using Include="System.Text.Json" />
+    <Using Include="System" />
+    <Using Include="System.Linq" />
+    <Using Include="System.Linq.Dynamic.Core" />
+    <Using Include="System.Linq.Expressions" />
+    <Using Include="Microsoft.Extensions.Logging" />
+    <Using Include="System.Collections.Generic" />
+    <Using Include="System.Threading" />
+    <Using Include="System.Threading.Tasks" />
+  </ItemGroup>
+</Project>

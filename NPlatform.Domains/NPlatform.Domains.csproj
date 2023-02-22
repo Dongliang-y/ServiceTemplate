@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Services\Sys\DutyService.cs" />
+    <Compile Remove="Services\Sys\DutyService.Designer.cs" />
+    <Compile Remove="Services\Sys\GroupService.cs" />
+    <Compile Remove="Services\Sys\GroupService.Designer.cs" />
+    <Compile Remove="Services\Sys\MessageService.cs" />
+    <Compile Remove="Services\Sys\MessageService.Designer.cs" />
+    <Compile Remove="Services\Sys\OrganizationService.cs" />
+    <Compile Remove="Services\Sys\OrganizationService.Designer.cs" />
+    <Compile Remove="Services\Sys\PositionService.cs" />
+    <Compile Remove="Services\Sys\PositionService.Designer.cs" />
+    <Compile Remove="Services\Sys\RegionService.cs" />
+    <Compile Remove="Services\Sys\RegionService.Designer.cs" />
+    <Compile Remove="Services\Sys\ResourcesService.cs" />
+    <Compile Remove="Services\Sys\ResourcesService.Designer.cs" />
+    <Compile Remove="Services\Sys\RoleService.cs" />
+    <Compile Remove="Services\Sys\RoleService.Designer.cs" />
+    <Compile Remove="Services\Sys\UnitService.cs" />
+    <Compile Remove="Services\Sys\UnitService.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+	  <PackageReference Include="NPlatform" Version="2.0.0" />
+	  <PackageReference Include="NPlatform.Infrastructure" Version="2.0.0.10" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.20" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entity\Sys\" />
+    <Folder Include="IRepositories\Sys\" />
+    <Folder Include="IService\Sys\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NPlatform.DTO\NPlatform.DTO.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Using Include="NPlatform" />
+    <Using Include="NPlatform.Infrastructure" />
+    <Using Include="NPlatform.Result" />
+    <Using Include="NPlatform.Query" />
+    <Using Include="NPlatform.Dto" />
+    <Using Include="NPlatform.Events" />
+    <Using Include="NPlatform.Consts" />
+    <Using Include="NPlatform.Exceptions" />
+    <Using Include="NPlatform.Enums" />
+    <Using Include="NPlatform.Bus" />
+    <Using Include="System.Text.Json" />
+    <Using Include="System" />
+    <Using Include="System.Linq" />
+    <Using Include="System.Linq.Dynamic.Core" />
+    <Using Include="System.Linq.Expressions" />
+    <Using Include="Microsoft.Extensions.Logging" />
+    <Using Include="System.Collections.Generic" />
+    <Using Include="System.Threading" />
+    <Using Include="System.Threading.Tasks" />
+  </ItemGroup>
+</Project>

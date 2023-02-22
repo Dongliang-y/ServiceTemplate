@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\PARATERA\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages;C:\Program Files\dotnet\sdk\NuGetFallbackFolder</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.4.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\PARATERA\.nuget\packages\" />
+    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
+    <SourceRoot Include="C:\Program Files\dotnet\sdk\NuGetFallbackFolder\" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)nplatform.infrastructure\2.0.0.10\contentFiles\any\net7.0\Config\log4net.config" Condition="Exists('$(NuGetPackageRoot)nplatform.infrastructure\2.0.0.10\contentFiles\any\net7.0\Config\log4net.config')">
+      <NuGetPackageId>NPlatform.Infrastructure</NuGetPackageId>
+      <NuGetPackageVersion>2.0.0.10</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Config\log4net.config</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)nplatform\2.0.0\contentFiles\any\net7.0\CodeGenerate\BuildAll.csp" Condition="Exists('$(NuGetPackageRoot)nplatform\2.0.0\contentFiles\any\net7.0\CodeGenerate\BuildAll.csp')">
+      <NuGetPackageId>NPlatform</NuGetPackageId>
+      <NuGetPackageVersion>2.0.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>CodeGenerate\BuildAll.csp</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)nplatform\2.0.0\contentFiles\any\net7.0\CodeGenerate\BuildAll.cst" Condition="Exists('$(NuGetPackageRoot)nplatform\2.0.0\contentFiles\any\net7.0\CodeGenerate\BuildAll.cst')">
+      <NuGetPackageId>NPlatform</NuGetPackageId>
+      <NuGetPackageVersion>2.0.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>CodeGenerate\BuildAll.cst</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)nplatform\2.0.0\contentFiles\any\net7.0\CodeGenerate\BuildAll.txt" Condition="Exists('$(NuGetPackageRoot)nplatform\2.0.0\contentFiles\any\net7.0\CodeGenerate\BuildAll.txt')">
+      <NuGetPackageId>NPlatform</NuGetPackageId>
+      <NuGetPackageVersion>2.0.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>CodeGenerate\BuildAll.txt</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)nplatform\2.0.0\contentFiles\any\net7.0\CodeGenerate\BuildView.cst" Condition="Exists('$(NuGetPackageRoot)nplatform\2.0.0\contentFiles\any\net7.0\CodeGenerate\BuildView.cst')">
+      <NuGetPackageId>NPlatform</NuGetPackageId>
+      <NuGetPackageVersion>2.0.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>CodeGenerate\BuildView.cst</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)nplatform\2.0.0\contentFiles\any\net7.0\CodeGenerate\Docker.cst" Condition="Exists('$(NuGetPackageRoot)nplatform\2.0.0\contentFiles\any\net7.0\CodeGenerate\Docker.cst')">
+      <NuGetPackageId>NPlatform</NuGetPackageId>
+      <NuGetPackageVersion>2.0.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>CodeGenerate\Docker.cst</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)nplatform\2.0.0\contentFiles\any\net7.0\CodeGenerate\Dto.cst" Condition="Exists('$(NuGetPackageRoot)nplatform\2.0.0\contentFiles\any\net7.0\CodeGenerate\Dto.cst')">
+      <NuGetPackageId>NPlatform</NuGetPackageId>
+      <NuGetPackageVersion>2.0.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>CodeGenerate\Dto.cst</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)nplatform\2.0.0\contentFiles\any\net7.0\CodeGenerate\IEntity.cst" Condition="Exists('$(NuGetPackageRoot)nplatform\2.0.0\contentFiles\any\net7.0\CodeGenerate\IEntity.cst')">
+      <NuGetPackageId>NPlatform</NuGetPackageId>
+      <NuGetPackageVersion>2.0.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>CodeGenerate\IEntity.cst</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)nplatform\2.0.0\contentFiles\any\net7.0\CodeGenerate\IRepositories.cst" Condition="Exists('$(NuGetPackageRoot)nplatform\2.0.0\contentFiles\any\net7.0\CodeGenerate\IRepositories.cst')">
+      <NuGetPackageId>NPlatform</NuGetPackageId>
+      <NuGetPackageVersion>2.0.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>CodeGenerate\IRepositories.cst</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)nplatform\2.0.0\contentFiles\any\net7.0\CodeGenerate\IService.cst" Condition="Exists('$(NuGetPackageRoot)nplatform\2.0.0\contentFiles\any\net7.0\CodeGenerate\IService.cst')">
+      <NuGetPackageId>NPlatform</NuGetPackageId>
+      <NuGetPackageVersion>2.0.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>CodeGenerate\IService.cst</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)nplatform\2.0.0\contentFiles\any\net7.0\CodeGenerate\MssqlEntity.cst" Condition="Exists('$(NuGetPackageRoot)nplatform\2.0.0\contentFiles\any\net7.0\CodeGenerate\MssqlEntity.cst')">
+      <NuGetPackageId>NPlatform</NuGetPackageId>
+      <NuGetPackageVersion>2.0.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>CodeGenerate\MssqlEntity.cst</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)nplatform\2.0.0\contentFiles\any\net7.0\CodeGenerate\MySqlEntity.cst" Condition="Exists('$(NuGetPackageRoot)nplatform\2.0.0\contentFiles\any\net7.0\CodeGenerate\MySqlEntity.cst')">
+      <NuGetPackageId>NPlatform</NuGetPackageId>
+      <NuGetPackageVersion>2.0.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>CodeGenerate\MySqlEntity.cst</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)nplatform\2.0.0\contentFiles\any\net7.0\CodeGenerate\OracleEntity.cst" Condition="Exists('$(NuGetPackageRoot)nplatform\2.0.0\contentFiles\any\net7.0\CodeGenerate\OracleEntity.cst')">
+      <NuGetPackageId>NPlatform</NuGetPackageId>
+      <NuGetPackageVersion>2.0.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>CodeGenerate\OracleEntity.cst</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)nplatform\2.0.0\contentFiles\any\net7.0\CodeGenerate\OracleEntityView.cst" Condition="Exists('$(NuGetPackageRoot)nplatform\2.0.0\contentFiles\any\net7.0\CodeGenerate\OracleEntityView.cst')">
+      <NuGetPackageId>NPlatform</NuGetPackageId>
+      <NuGetPackageVersion>2.0.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>CodeGenerate\OracleEntityView.cst</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)nplatform\2.0.0\contentFiles\any\net7.0\CodeGenerate\Repository.cst" Condition="Exists('$(NuGetPackageRoot)nplatform\2.0.0\contentFiles\any\net7.0\CodeGenerate\Repository.cst')">
+      <NuGetPackageId>NPlatform</NuGetPackageId>
+      <NuGetPackageVersion>2.0.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>CodeGenerate\Repository.cst</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)nplatform\2.0.0\contentFiles\any\net7.0\CodeGenerate\Service.cst" Condition="Exists('$(NuGetPackageRoot)nplatform\2.0.0\contentFiles\any\net7.0\CodeGenerate\Service.cst')">
+      <NuGetPackageId>NPlatform</NuGetPackageId>
+      <NuGetPackageVersion>2.0.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>CodeGenerate\Service.cst</Link>
+    </Content>
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.extensions.apidescription.server\6.0.5\build\Microsoft.Extensions.ApiDescription.Server.props" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.apidescription.server\6.0.5\build\Microsoft.Extensions.ApiDescription.Server.props')" />
+    <Import Project="$(NuGetPackageRoot)swashbuckle.aspnetcore\6.4.0\build\Swashbuckle.AspNetCore.props" Condition="Exists('$(NuGetPackageRoot)swashbuckle.aspnetcore\6.4.0\build\Swashbuckle.AspNetCore.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.visualstudio.azure.containers.tools.targets\1.17.0\build\Microsoft.VisualStudio.Azure.Containers.Tools.Targets.props" Condition="Exists('$(NuGetPackageRoot)microsoft.visualstudio.azure.containers.tools.targets\1.17.0\build\Microsoft.VisualStudio.Azure.Containers.Tools.Targets.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">C:\Users\PARATERA\.nuget\packages\microsoft.extensions.apidescription.server\6.0.5</PkgMicrosoft_Extensions_ApiDescription_Server>
+    <PkgMicrosoft_VisualStudio_Azure_Containers_Tools_Targets Condition=" '$(PkgMicrosoft_VisualStudio_Azure_Containers_Tools_Targets)' == '' ">C:\Users\PARATERA\.nuget\packages\microsoft.visualstudio.azure.containers.tools.targets\1.17.0</PkgMicrosoft_VisualStudio_Azure_Containers_Tools_Targets>
+    <PkgMicrosoft_EntityFrameworkCore_Tools_DotNet Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools_DotNet)' == '' ">C:\Users\PARATERA\.nuget\packages\microsoft.entityframeworkcore.tools.dotnet\2.0.3</PkgMicrosoft_EntityFrameworkCore_Tools_DotNet>
+  </PropertyGroup>
+</Project>

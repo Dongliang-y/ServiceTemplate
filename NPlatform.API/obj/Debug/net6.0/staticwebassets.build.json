@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "Hash": "TdHKNlbJuG3q1Hv1v/tsc6Ma59RmyoZ8zHwsvz65xoM=",
+  "Source": "NPlatform.API",
+  "BasePath": "_content/NPlatform.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "D:\\work\\notplatform.git\\notplatform\\NPlatform\\NPlatform.csproj",
+      "Version": 2,
+      "Source": "NPlatform",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU;TargetFramework=net6.0",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;RuntimeIdentifier",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU;TargetFramework=net6.0",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;RuntimeIdentifier"
+    }
+  ],
+  "DiscoveryPatterns": [
+    {
+      "Name": "NPlatform.API\\wwwroot",
+      "Source": "NPlatform.API",
+      "ContentRoot": "D:\\work\\notplatform.git\\not-microapp\\service\\NPlatform.API\\wwwroot\\",
+      "BasePath": "_content/NPlatform.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

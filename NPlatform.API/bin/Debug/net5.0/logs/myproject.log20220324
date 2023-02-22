@@ -1,0 +1,218 @@
+2022-03-24 15:10:31,308 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://[::]:5001
+2022-03-24 15:10:31,315 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://[::]:5000
+2022-03-24 15:10:33,981 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2022-03-24 15:10:33,983 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2022-03-24 15:10:33,985 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\notplatform.git\not-microapp\service\NPlatform.API
+2022-03-24 15:27:04,196 [11] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[NPlatform.Domains.Entity.Sys.User, NPlatform.Domains, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[NPlatform.Dto.Sys.UserDto, NPlatform.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+User -> UserDto
+NPlatform.Domains.Entity.Sys.User -> NPlatform.Dto.Sys.UserDto
+   at lambda_method464(Closure , User , UserDto , ResolutionContext )
+   at lambda_method463(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method463(Closure , Object , IEnumerable`1 , ResolutionContext )
+   at NPlatform.AutoMap.IEnumerableToListResultConverter`2.Convert(IEnumerable`1 source, IListResult`1 destination, ResolutionContext context) in D:\work\notplatform.git\notplatform\NPlatform\AutoMap\IEnumerableToListResultConverter.cs:line 14
+   at lambda_method462(Closure , IEnumerable`1 , ListResult`1 , ResolutionContext )
+   at NPlatform.AutoMap.MapperService.Map[TSource,TDestination](TSource source) in D:\work\notplatform.git\notplatform\NPlatform\AutoMap\MapperService.cs:line 66
+   at NPlatform.Domains.Services.Sys.UserService.GetListAsync(QueryExp exp) in D:\work\notplatform.git\not-microapp\service\NPlatform.Domains\Services\Sys\UserService.cs:line 43
+   at NPlatform.API.Controllers.UsersController.GetList(QueryExp whereExp) in D:\work\notplatform.git\not-microapp\service\NPlatform.API\Controllers\UsersController.cs:line 44
+   at lambda_method454(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-03-24 15:31:57,796 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://[::]:5001
+2022-03-24 15:31:57,855 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://[::]:5000
+2022-03-24 15:32:00,423 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2022-03-24 15:32:00,425 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2022-03-24 15:32:00,426 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\notplatform.git\not-microapp\service\NPlatform.API
+2022-03-24 15:39:50,543 [11] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[NPlatform.Domains.Entity.Sys.User, NPlatform.Domains, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[NPlatform.Dto.Sys.UserDto, NPlatform.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> System.ArgumentException: NPlatform.Dto.Sys.UserDto needs to have a constructor with 0 args or only optional args. Validate your configuration for details. (Parameter 'type')
+   at lambda_method463(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method463(Closure , Object , IEnumerable`1 , ResolutionContext )
+   at NPlatform.AutoMap.IEnumerableToListResultConverter`2.Convert(IEnumerable`1 source, IListResult`1 destination, ResolutionContext context) in D:\work\notplatform.git\notplatform\NPlatform\AutoMap\IEnumerableToListResultConverter.cs:line 14
+   at lambda_method462(Closure , IEnumerable`1 , ListResult`1 , ResolutionContext )
+   at NPlatform.AutoMap.MapperService.Map[TSource,TDestination](TSource source) in D:\work\notplatform.git\notplatform\NPlatform\AutoMap\MapperService.cs:line 66
+   at NPlatform.Domains.Services.Sys.UserService.GetListAsync(QueryExp exp) in D:\work\notplatform.git\not-microapp\service\NPlatform.Domains\Services\Sys\UserService.cs:line 43
+   at NPlatform.API.Controllers.UsersController.GetList(QueryExp whereExp) in D:\work\notplatform.git\not-microapp\service\NPlatform.API\Controllers\UsersController.cs:line 44
+   at lambda_method454(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-03-24 15:41:25,414 [5] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[NPlatform.Domains.Entity.Sys.User, NPlatform.Domains, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[NPlatform.Dto.Sys.UserDto, NPlatform.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> System.ArgumentException: NPlatform.Dto.Sys.UserDto needs to have a constructor with 0 args or only optional args. Validate your configuration for details. (Parameter 'type')
+   at lambda_method463(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method463(Closure , Object , IEnumerable`1 , ResolutionContext )
+   at NPlatform.AutoMap.IEnumerableToListResultConverter`2.Convert(IEnumerable`1 source, IListResult`1 destination, ResolutionContext context) in D:\work\notplatform.git\notplatform\NPlatform\AutoMap\IEnumerableToListResultConverter.cs:line 14
+   at lambda_method462(Closure , IEnumerable`1 , ListResult`1 , ResolutionContext )
+   at NPlatform.AutoMap.MapperService.Map[TSource,TDestination](TSource source) in D:\work\notplatform.git\notplatform\NPlatform\AutoMap\MapperService.cs:line 66
+   at NPlatform.Domains.Services.Sys.UserService.GetListAsync(QueryExp exp) in D:\work\notplatform.git\not-microapp\service\NPlatform.Domains\Services\Sys\UserService.cs:line 43
+   at NPlatform.API.Controllers.UsersController.GetList(QueryExp whereExp) in D:\work\notplatform.git\not-microapp\service\NPlatform.API\Controllers\UsersController.cs:line 44
+   at lambda_method454(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-03-24 15:55:54,232 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://[::]:5001
+2022-03-24 15:55:54,242 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://[::]:5000
+2022-03-24 15:55:56,729 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2022-03-24 15:55:56,731 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2022-03-24 15:55:56,733 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\notplatform.git\not-microapp\service\NPlatform.API
+2022-03-24 16:06:03,366 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://[::]:5001
+2022-03-24 16:06:03,374 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://[::]:5000
+2022-03-24 16:06:05,870 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2022-03-24 16:06:05,872 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2022-03-24 16:06:05,874 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\notplatform.git\not-microapp\service\NPlatform.API
+2022-03-24 16:09:57,847 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://[::]:5001
+2022-03-24 16:09:57,856 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://[::]:5000
+2022-03-24 16:10:00,244 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2022-03-24 16:10:00,245 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2022-03-24 16:10:00,247 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\notplatform.git\not-microapp\service\NPlatform.API
+2022-03-24 16:17:38,740 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://[::]:5001
+2022-03-24 16:17:38,749 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://[::]:5000
+2022-03-24 16:17:41,138 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2022-03-24 16:17:41,140 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2022-03-24 16:17:41,145 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\notplatform.git\not-microapp\service\NPlatform.API
+2022-03-24 16:22:17,870 [4] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonReaderException: Invalid property identifier character: \. Path '[0]', line 1, position 2.
+   at Newtonsoft.Json.JsonTextReader.ParseProperty()
+   at Newtonsoft.Json.JsonTextReader.ParseObject()
+   at Newtonsoft.Json.JsonReader.ReadAndAssert()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at NPlatform.Query.QueryExp.GetSelectSorts() in D:\work\notplatform.git\notplatform\NPlatform\Query\QueryExp.cs:line 63
+   at NPlatform.Domains.Services.Sys.UserService.GetListAsync(QueryExp exp) in D:\work\notplatform.git\not-microapp\service\NPlatform.Domains\Services\Sys\UserService.cs:line 43
+   at NPlatform.API.Controllers.UsersController.GetList(QueryExp whereExp) in D:\work\notplatform.git\not-microapp\service\NPlatform.API\Controllers\UsersController.cs:line 44
+   at lambda_method454(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-03-24 16:22:33,176 [11] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+System.ArgumentException: Could not find 'createTime' in Mapping.
+   at DapperExtensions.Sql.SqlGeneratorImpl.GetColumnName(IClassMapper map, String propertyName, Boolean includeAlias)
+   at DapperExtensions.Sql.SqlGeneratorImpl.<>c__DisplayClass6_0.<Select>b__0(ISort s)
+   at System.Linq.Enumerable.SelectArrayIterator`2.MoveNext()
+   at System.Linq.Enumerable.Aggregate[TSource,TAccumulate,TResult](IEnumerable`1 source, TAccumulate seed, Func`3 func, Func`2 resultSelector)
+   at DapperExtensions.ReflectionHelper.AppendStrings(IEnumerable`1 list, String seperator)
+   at DapperExtensions.Sql.SqlGeneratorImpl.Select(IClassMapper classMap, IEnumerable`1 columNames, IPredicate predicate, IList`1 sort, IDictionary`2 parameters)
+   at DapperExtensions.DapperImplementor.GetListAsync[T](IDbConnection connection, IEnumerable`1 columnNames, IClassMapper classMap, IPredicate predicate, IList`1 sort, IDbTransaction transaction, Nullable`1 commandTimeout)
+   at DapperExtensions.DapperImplementor.GetListAsync[T](IDbConnection connection, Object predicate, IList`1 sort, IDbTransaction transaction, Nullable`1 commandTimeout)
+   at DapperExtensions.DapperExtensions.GetListAsync[T](IDbConnection connection, Object predicate, IList`1 sort, IDbTransaction transaction, Nullable`1 commandTimeout)
+   at NPlatform.Repositories.RepositoryBase`2.GetListByExpAsync(Expression`1 filter, IEnumerable`1 sorts) in D:\work\notplatform.git\not-microapp\service\NPlatform.DapperRepository\RepositoryBase.cs:line 355
+   at NPlatform.Domains.Services.Sys.UserService.GetListAsync(QueryExp exp) in D:\work\notplatform.git\not-microapp\service\NPlatform.Domains\Services\Sys\UserService.cs:line 43
+   at NPlatform.API.Controllers.UsersController.GetList(QueryExp whereExp) in D:\work\notplatform.git\not-microapp\service\NPlatform.API\Controllers\UsersController.cs:line 44
+   at lambda_method454(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-03-24 16:35:17,531 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://[::]:5001
+2022-03-24 16:35:17,539 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://[::]:5000
+2022-03-24 16:35:19,954 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2022-03-24 16:35:19,956 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2022-03-24 16:35:19,957 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\notplatform.git\not-microapp\service\NPlatform.API
+2022-03-24 17:13:14,160 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://[::]:5001
+2022-03-24 17:13:14,168 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://[::]:5000
+2022-03-24 17:13:16,679 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2022-03-24 17:13:16,683 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2022-03-24 17:13:16,685 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\notplatform.git\not-microapp\service\NPlatform.API
+2022-03-24 17:18:04,888 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://[::]:5001
+2022-03-24 17:18:04,898 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://[::]:5000
+2022-03-24 17:18:07,580 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2022-03-24 17:18:07,583 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2022-03-24 17:18:07,588 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\notplatform.git\not-microapp\service\NPlatform.API
+2022-03-24 17:26:53,553 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://[::]:5001
+2022-03-24 17:26:53,563 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://[::]:5000
+2022-03-24 17:26:55,980 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2022-03-24 17:26:55,982 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2022-03-24 17:26:55,984 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\notplatform.git\not-microapp\service\NPlatform.API
+2022-03-24 18:03:18,036 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://[::]:5001
+2022-03-24 18:03:18,044 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://[::]:5000
+2022-03-24 18:03:20,465 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2022-03-24 18:03:20,466 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2022-03-24 18:03:20,468 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\notplatform.git\not-microapp\service\NPlatform.API
+2022-03-24 18:07:51,896 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://[::]:5001
+2022-03-24 18:07:51,903 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://[::]:5000
+2022-03-24 18:07:54,437 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2022-03-24 18:07:54,440 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2022-03-24 18:07:54,442 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\notplatform.git\not-microapp\service\NPlatform.API
+2022-03-24 18:10:06,275 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://[::]:5001
+2022-03-24 18:10:06,288 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://[::]:5000
+2022-03-24 18:10:08,834 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2022-03-24 18:10:08,841 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2022-03-24 18:10:08,844 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\notplatform.git\not-microapp\service\NPlatform.API

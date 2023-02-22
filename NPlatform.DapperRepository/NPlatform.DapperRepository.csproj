@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="DapperExtensions.Lambda" Version="3.0.0.26-alpha" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NPlatform.Domains\NPlatform.Domains.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Sys\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Using Include="NPlatform" />
+    <Using Include="NPlatform.Infrastructure" />
+    <Using Include="NPlatform.Result" />
+    <Using Include="NPlatform.Query" />
+    <Using Include="NPlatform.Dto" />
+    <Using Include="NPlatform.Events" />
+    <Using Include="NPlatform.Consts" />
+    <Using Include="NPlatform.Exceptions" />
+    <Using Include="NPlatform.Enums" />
+    <Using Include="NPlatform.Bus" />
+    <Using Include="System.Text.Json" />
+    <Using Include="System" />
+    <Using Include="System.Linq" />
+    <Using Include="System.Linq.Dynamic.Core" />
+    <Using Include="System.Linq.Expressions" />
+    <Using Include="Microsoft.Extensions.Logging" />
+    <Using Include="System.Collections.Generic" />
+    <Using Include="System.Threading" />
+    <Using Include="System.Threading.Tasks" />
+  </ItemGroup>
+</Project>

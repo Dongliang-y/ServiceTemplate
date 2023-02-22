@@ -1,0 +1,15 @@
+D:\work\notplatform.git\ServiceTemplate\NPlatform.Application\obj\Debug\net7.0\NPlatform.Application.csproj.AssemblyReference.cache
+D:\work\notplatform.git\ServiceTemplate\NPlatform.Application\obj\Debug\net7.0\NPlatform.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\work\notplatform.git\ServiceTemplate\NPlatform.Application\obj\Debug\net7.0\NPlatform.Application.AssemblyInfoInputs.cache
+D:\work\notplatform.git\ServiceTemplate\NPlatform.Application\obj\Debug\net7.0\NPlatform.Application.AssemblyInfo.cs
+D:\work\notplatform.git\ServiceTemplate\NPlatform.Application\obj\Debug\net7.0\NPlatform.Application.csproj.CoreCompileInputs.cache
+D:\work\notplatform.git\ServiceTemplate\NPlatform.Application\bin\Debug\net7.0\NPlatform.Application.deps.json
+D:\work\notplatform.git\ServiceTemplate\NPlatform.Application\bin\Debug\net7.0\NPlatform.Application.dll
+D:\work\notplatform.git\ServiceTemplate\NPlatform.Application\bin\Debug\net7.0\NPlatform.Application.pdb
+D:\work\notplatform.git\ServiceTemplate\NPlatform.Application\bin\Debug\net7.0\NPlatform.DTO.dll
+D:\work\notplatform.git\ServiceTemplate\NPlatform.Application\bin\Debug\net7.0\NPlatform.DTO.pdb
+D:\work\notplatform.git\ServiceTemplate\NPlatform.Application\obj\Debug\net7.0\NPlatform.Application.csproj.CopyComplete
+D:\work\notplatform.git\ServiceTemplate\NPlatform.Application\obj\Debug\net7.0\NPlatform.Application.dll
+D:\work\notplatform.git\ServiceTemplate\NPlatform.Application\obj\Debug\net7.0\refint\NPlatform.Application.dll
+D:\work\notplatform.git\ServiceTemplate\NPlatform.Application\obj\Debug\net7.0\NPlatform.Application.pdb
+D:\work\notplatform.git\ServiceTemplate\NPlatform.Application\obj\Debug\net7.0\ref\NPlatform.Application.dll

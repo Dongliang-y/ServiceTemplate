@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <UserSecretsId>0e123a56-301c-40f5-8a56-ec7c1e31015a</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Controllers\UsersController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Consul" Version="1.6.10.7">
+      <TreatAsUsed>true</TreatAsUsed>
+    </PackageReference>
+    <PackageReference Include="MediatR" Version="10.0.1">
+      <TreatAsUsed>true</TreatAsUsed>
+    </PackageReference>
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1">
+      <TreatAsUsed>true</TreatAsUsed>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Log4Net.AspNetCore" Version="6.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
+    <PackageReference Include="NPlatform" Version="2.0.0" />
+    <PackageReference Include="NPlatform.Infrastructure" Version="2.0.0.10" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.20">
+      <TreatAsUsed>true</TreatAsUsed>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.3">
+      <TreatAsUsed>true</TreatAsUsed>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NPlatform.Application\NPlatform.Application.csproj" />
+    <ProjectReference Include="..\NPlatform.DapperRepository\NPlatform.DapperRepository.csproj" />
+    <ProjectReference Include="..\NPlatform.Domains\NPlatform.Domains.csproj" />
+    <ProjectReference Include="..\NPlatform.DTO\NPlatform.DTO.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Using Include="NPlatform" />
+    <Using Include="NPlatform.Infrastructure" />
+    <Using Include="NPlatform.Result" />
+    <Using Include="NPlatform.Query" />
+    <Using Include="NPlatform.Dto" />
+    <Using Include="NPlatform.Events" />
+    <Using Include="NPlatform.Consts" />
+    <Using Include="NPlatform.Exceptions" />
+    <Using Include="NPlatform.Enums" />
+    <Using Include="NPlatform.Bus" />
+    <Using Include="System.Text.Json" />
+    <Using Include="System" />
+    <Using Include="System.Linq" />
+    <Using Include="System.Linq.Dynamic.Core" />
+    <Using Include="System.Linq.Expressions" />
+    <Using Include="Microsoft.Extensions.Logging" />
+    <Using Include="System.Collections.Generic" />
+    <Using Include="System.Threading" />
+    <Using Include="System.Threading.Tasks" />
+	<Using Include="Microsoft.AspNetCore.Mvc" />
+	<Using Include="Microsoft.Extensions.Configuration" />
+	<Using Include="System.IO" />
+	<Using Include="System.Text" />
+  </ItemGroup>
+</Project>

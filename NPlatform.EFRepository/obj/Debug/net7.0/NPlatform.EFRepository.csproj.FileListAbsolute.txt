@@ -1,0 +1,5 @@
+D:\work\notplatform.git\ServiceTemplate\NPlatform.EFRepository\obj\Debug\net7.0\NPlatform.EFRepository.csproj.AssemblyReference.cache
+D:\work\notplatform.git\ServiceTemplate\NPlatform.EFRepository\obj\Debug\net7.0\NPlatform.EFRepository.GeneratedMSBuildEditorConfig.editorconfig
+D:\work\notplatform.git\ServiceTemplate\NPlatform.EFRepository\obj\Debug\net7.0\NPlatform.EFRepository.AssemblyInfoInputs.cache
+D:\work\notplatform.git\ServiceTemplate\NPlatform.EFRepository\obj\Debug\net7.0\NPlatform.EFRepository.AssemblyInfo.cs
+D:\work\notplatform.git\ServiceTemplate\NPlatform.EFRepository\obj\Debug\net7.0\NPlatform.EFRepository.csproj.CoreCompileInputs.cache

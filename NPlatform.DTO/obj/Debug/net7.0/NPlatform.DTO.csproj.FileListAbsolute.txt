@@ -1,0 +1,12 @@
+D:\work\notplatform.git\ServiceTemplate\NPlatform.DTO\obj\Debug\net7.0\NPlatform.DTO.csproj.AssemblyReference.cache
+D:\work\notplatform.git\ServiceTemplate\NPlatform.DTO\obj\Debug\net7.0\NPlatform.DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\work\notplatform.git\ServiceTemplate\NPlatform.DTO\obj\Debug\net7.0\NPlatform.DTO.AssemblyInfoInputs.cache
+D:\work\notplatform.git\ServiceTemplate\NPlatform.DTO\obj\Debug\net7.0\NPlatform.DTO.AssemblyInfo.cs
+D:\work\notplatform.git\ServiceTemplate\NPlatform.DTO\obj\Debug\net7.0\NPlatform.DTO.csproj.CoreCompileInputs.cache
+D:\work\notplatform.git\ServiceTemplate\NPlatform.DTO\bin\Debug\net7.0\NPlatform.DTO.deps.json
+D:\work\notplatform.git\ServiceTemplate\NPlatform.DTO\bin\Debug\net7.0\NPlatform.DTO.dll
+D:\work\notplatform.git\ServiceTemplate\NPlatform.DTO\bin\Debug\net7.0\NPlatform.DTO.pdb
+D:\work\notplatform.git\ServiceTemplate\NPlatform.DTO\obj\Debug\net7.0\NPlatform.DTO.dll
+D:\work\notplatform.git\ServiceTemplate\NPlatform.DTO\obj\Debug\net7.0\refint\NPlatform.DTO.dll
+D:\work\notplatform.git\ServiceTemplate\NPlatform.DTO\obj\Debug\net7.0\NPlatform.DTO.pdb
+D:\work\notplatform.git\ServiceTemplate\NPlatform.DTO\obj\Debug\net7.0\ref\NPlatform.DTO.dll
