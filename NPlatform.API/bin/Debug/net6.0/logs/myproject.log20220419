@@ -1,5 +1,0 @@
-2022-04-19 18:05:16,410 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://[::]:5001
-2022-04-19 18:05:16,418 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://[::]:5000
-2022-04-19 18:05:19,945 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
-2022-04-19 18:05:19,948 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
-2022-04-19 18:05:19,960 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\work\notplatform.git\not-microapp\service\NPlatform.API
